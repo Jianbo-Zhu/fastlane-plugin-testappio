@@ -9,7 +9,7 @@ module Fastlane
       def self.check_ta_cli
         unless `which ta-cli`.include?('ta-cli')
           UI.error("ta-cli not found, installing")
-          UI.command(`curl -Ls https://github.com/testappio/cli/releases/latest/download/install | bash`)
+          UI.command(`curl -Ls https://github.com/Massad/cli/releases/latest/download/install | bash`)
         end
       end
 
